@@ -1,0 +1,210 @@
+/* APLICA A TODAS LAS HTML */
+/* ESTILOS
+font-family: 'Gentium Plus', serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Open Sans', sans-serif;
+ */
+
+ *{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+ }
+ 
+ @media screen and (max-width:960px) {
+    header{
+       display: flex;
+       flex-direction: column;
+    }
+ 
+    header .navbar-brand {
+       margin: 0 auto 10px ;
+    }
+ 
+ 
+    footer{
+       flex-direction: column;
+       margin: 15px auto;
+    }
+    footer .navbar-brand{
+       margin: 0 auto;
+    } 
+    footer .iconos img{
+       width: 100%;
+    }
+ }
+ 
+ 
+ /* INDEX */
+ .presentacion{
+    max-width: 60%;
+ }
+ 
+  .pasosCompra{
+    margin: auto;
+    max-width: 60%;
+  }
+  
+ 
+  .containerNovedades{
+    background-image: url(../img/fondoNovedades.jpg);
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 0 0 100px 150px rgba(0, 0, 0, .3);
+     display: block;
+     color: white;
+     align-items: center;
+  }
+  
+  .contenido h1{
+     display: flex;
+     justify-content: center;
+     text-align: center;
+     font-size: 50px;
+     font-family: 'Open Sans', sans-serif;
+   }
+  
+   .contenido h2{
+     margin: 20px auto;
+     text-align: center;
+     font-size: 40px;
+     font-family: 'Open Sans', sans-serif;
+   }
+  .cartelNeon{
+     animation: neon 2s infinite alternate;
+  }
+  
+  /*  .contenido .descuento{
+     margin-top: 80px;
+     text-align: center;
+     font-size: 30px;
+     font-family: 'Open Sans', sans-serif;
+  }
+     .descuento{
+     animation: descuentoNeon 2s infinite alternate;
+   } */
+  
+  /* ANIMACIONES */
+  @keyframes neon {
+     0%, 10%, 15%, 20%, 30%, 35%, 40%, 50%, 55%, 60%, 70%, 75%, 80%, 85%, 90%, 100%{
+        text-shadow: 0 0 25px #3485ff,
+                     0 0 35px #00246c, 
+                     0 0 30px #00246c, 
+                     0 0 50px #3485ff; 
+     }
+     10%, 15%, 60%{
+        text-shadow: none;
+     }
+   } 
+  
+  /*  @keyframes descuentoNeon {
+     0%, 10%, 15%, 20%, 30%, 35%, 40%, 50%, 55%, 60%, 70%, 75%, 80%, 85%, 90%, 100%{
+        text-shadow: 0 0 4px #fff,
+                     0 0 15px #ff0, 
+                     0 0 30px #ff8000, 
+                     0 0 50px #ff8000; 
+     }
+     10%, 15%, 60%{
+        text-shadow: none;
+     }
+   }  */
+ 
+   .contenido .novedadesVinos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 100px 25px 100px 25px;
+ }
+ @media (max-width: 1200px) {
+    .inicio{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+    }
+    .presentacion {
+       display: contents;
+    
+    }
+    .inicio .newsletter .card-title{
+      font-size: 100%;
+    }
+    .inicio .newsletter .card-body{
+       margin: 0;
+       padding: 0;
+    }
+ }
+ @media (max-width: 960px){
+   
+ 
+    .contenido h1{
+       font-size: 5vw;
+       font-family: 'Open Sans', sans-serif;
+     }
+    
+     .contenido h2{
+       font-size: 4vw;
+       font-family: 'Open Sans', sans-serif;
+     }
+    
+    .contenido .novedadesVinos {
+       margin: 20% 25px 100px 25px;
+    }
+ 
+ .contenido .novedadesVinos img{
+       width: 30%;
+       height: 50vh;
+       margin-top: 15px;
+ }
+ }
+ 
+ @media (max-width: 680px){
+    .contenido .novedadesVinos img{
+       width: 50%;
+       height: 60vh;
+       margin-top: 15px;
+ }
+ .inicio .newsletter .card{
+    margin: 0;
+ }
+ 
+ .contenido .novedadesVinos img{
+    width: 50%;
+    height: 30vh;
+    margin-top: 15px;
+ }
+ }
+ 
+ /* */
+ 
+ 
+ /* CONTACTO.HTML */
+ 
+ #contacto {
+    background-image: url(../img/contactoFondo.jpg);
+    background-size: cover;
+    height: 100vh;
+ 
+ }
+ 
+ #contacto .formularioContacto{
+    display: flex;
+    justify-content: center;
+    padding-top: 20vw;
+  
+ }
+ 
+ .formularioContacto form div{
+    padding: 3px;
+    background-color: rgb(247, 244, 242, 0.3);
+    display: flex;
+    flex-direction: column;
+    padding: 5px 15px;
+ }
+ @media screen and(max-width:960px) {
+ .formularioContacto form div input{
+    width: 10vh;
+  }
+ }
+ 
+ 
