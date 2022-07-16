@@ -1,223 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cava</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <!-- SEO -->
+    <meta name="description" content="Tienda de vinos. Contamos con una amplia gama de etiquetas seleccionadas para nuestros clientes, podras elegir entre distintas bodegas. Apostamos a los buenos momentos ">
+    <meta name="keywords" content="vinos, momentos, bodegas, tienda, compra">
+    <title>CAVA | Productos </title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../sass/main.css">
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Finlandica&display=swap" rel="stylesheet">
     <!-- Bootstrap css -->
     <!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-</head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  </head>
 <body>
-    <header>
-        <nav class="navbar bg-light">
-            <div class="container p-2 text-dark ">
-              <a class="navbar-brand " href="../index.html">
-                <img src="../img/logoC.png" alt="logoCava" width="300" height="150">
+  <header>
+    <nav class="navbar navbar-expand-lg bg-light ">
+      <div class="container p-2 ">
+        <a class="navbar-brand " href="../index.html">
+          <img src="../img/logoC.png" alt="logoCava" width="300" height="150">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class=" collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 m-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link active dropdown-toggle" href="./catalogo.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Catálogo
               </a>
-              <ul class="nav nav-pills">
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./nosotros.html">Nosotros</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle active" href="../pages/catalogo.html" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Catálogo
-                    </a>
-                    <ul class="dropdown-menu " aria-labelledby="navbarScrollingDropdown">
-                      <li><a class="dropdown-item" href="./Catalogo.html#vinosTintos">Vinos Tintos</a></li>
-                      <li><a class="dropdown-item" href="./Catalogo.html#vinosBlancos">Vinos Blancos</a></li>
-                    </ul>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="./comoComprar.html" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Cómo comprar
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                          <li><a class="dropdown-item" href="./comoComprar.html#3cuotas">3 cuotas sin interés</a></li>
-                          <li><a class="dropdown-item" href="./comoComprar.html#envio-gratis">Envío gratis</a></li>
-                          <li><a class="dropdown-item" href="./contacto.html">Venta mayorista</a></li>
-                        </ul>
-                <li class="nav-item">
-                  <a class="nav-link" href="./contacto.html">Contacto</a>
-                </li>
-              
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="./catalogo.html#vinosTintos">Vinos Tintos</a></li>
+                <li><a class="dropdown-item" href="./catalogo.html#vinosBlancos">Vinos Blancos</a></li>
               </ul>
-            </div>
-         
-          </nav>
-        </header>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="./catalogo.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Cómo comprar
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="./comoComprar.html#3cuotas">3 cuotas sin interés</a></li>
+                <li><a class="dropdown-item" href="./comoComprar.html#envio-gratis">Envíos gratis</a></li>
+                <li><a class="dropdown-item" href="./contacto.html">Ventas Mayoristas</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contacto.html">Contacto</a>
+            </li>
+        </div>
+      </div>
+    </nav>
+  </header> 
 
-        <main>
-          <section id="vinos-tintos">
-          <h1 class="d-flex justify-content-center p-5">Vinos Tintos</h1><a name="vinosTintos"></a>
-          <h2 class="d-flex justify-content-center">Malbec</h2>
-          <article class=" mt-5">
-            
-            <div class="row  row-cols-md-3 g-4 m-auto justify-content-center">
-              <div class="col-xl-2">
-                <div class="card">
-                  <img src="../img/productosNovedades/casilleroRedBlend.png" class="card-img-top img-thumbnail " alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-2">
-                <div class="card">
-                  <img src="../img/productosNovedades/casilleroRedBlend.png" class="card-img-top"  alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-2">
-                <div class="card">
-                  <img src="../img/productosNovedades/casilleroRedBlend.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-2">
-                <div class="card">
-                  <img src="../img/productosNovedades/casilleroRedBlend.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  </div>
-                </div>
+  <h1>Nuestros productos</h1>
+  <main>
+    <section id="vinos-tintos">
+    <h1 class="title  d-flex justify-content-center p-5">Vinos Tintos</h1><a name="vinosTintos"></a>
+    <h2 class=" d-flex justify-content-center">Malbec</h2>
+    <article class=" mt-5">
+      
+      <div class="bg-light row  row-cols-md-3 g-4 m-auto justify-content-center">
+        <div class="col-xl-2">
+          <div class="card">
+            <img src="../img/productos/malbec/malbecBosco.png" class="card-img-top img-thumbnail " alt="malbec Don Bosco">
+            <div class="card-body">
+              <h5 class="card-title">Don bosco</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-2">
+          <div class="card">
+            <img src="../img/productos/malbec/malbecCasillero.png" class="card-img-top"  alt="malbec Casillero del Diablo">
+            <div class="card-body">
+              <h5 class="card-title">Casillero del Diablo</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-2">
+          <div class="card">
+            <img src="../img/productos/malbec/malbecDiablo.png" class="card-img-top" alt="malbec Diablo">
+            <div class="card-body">
+              <h5 class="card-title">Diablo</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-2">
+          <div class="card">
+            <img src="../img/productos/malbec/malbecErrante.png" class="card-img-top" alt="malbec Errante">
+            <div class="card-body">
+              <h5 class="card-title">Errante</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-2">
+          <div class="card">
+            <img src="../img//productos/malbec/malbecOtroloco.png" class="card-img-top" alt="malbec Otro loco">
+            <div class="card-body">
+              <h5 class="card-title">Otro loco más</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-2">
+          <div class="card">
+            <img src="../img/productos/malbec/malbecSantajulia.png" class="card-img-top" alt="malbec Santa Julia">
+            <div class="card-body">
+              <h5 class="card-title">Santa Julia</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+      <h2 class=" d-flex justify-content-center mt-5">Cabernet Sauvignon</h2>
+    <article class=" mt-5">
+      
+      <div class="bg-light row  row-cols-md-3 g-4 m-auto justify-content-center">
+        <div class="col-xl-2">
+          <div class="card">
+            <img src="../img/productos/cabernet/cabernetCampaccio.png" class="card-img-top img-thumbnail " alt="cabernet Campaccio">
+            <div class="card-body">
+              <h5 class="card-title">Campaccio</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-2">
+          <div class="card">
+            <img src="../img/productos/cabernet/cabernetCasillero.png" class="card-img-top"  alt="cabernet Casillero del Diablo">
+            <div class="card-body">
+              <h5 class="card-title">Casillero del Diablo</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-2">
+          <div class="card">
+            <img src="../img/productos/cabernet/cabernetLopez.png" class="card-img-top" alt="cabernet Lopez">
+            <div class="card-body">
+              <h5 class="card-title">Lopez</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-2">
+          <div class="card">
+            <img src="../img/productos/cabernet/cabernetNieto.png" class="card-img-top" alt="cabernet Nieto">
+            <div class="card-body">
+              <h5 class="card-title">Nieto</h5>
+            </div>
+          </div>
+        </div>
+          <div class="col-xl-2">
+            <div class="card">
+              <img src="../img/productos/cabernet/cabernetNietoS.png" class="card-img-top" alt="cabernet Nieto seleccionado">
+              <div class="card-body">
+                <h5 class="card-title">Nieto (seleccionado)</h5>
               </div>
             </div>
-            
-            
-            <h2 class="d-flex justify-content-center mt-5">Cabernet Sauvignon</h2>
-          <article class=" mt-5">
-            
-            <div class="row  row-cols-md-3 g-4 m-auto justify-content-center">
-              <div class="col-xl-2">
-                <div class="card">
-                  <img src="../img/productosNovedades/casilleroCabernet.png" class="card-img-top img-thumbnail " alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-2">
-                <div class="card">
-                  <img src="../img/productosNovedades/casilleroCabernet.png" class="card-img-top"  alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-2">
-                <div class="card">
-                  <img src="../img/productosNovedades/casilleroCabernet.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-2">
-                <div class="card">
-                  <img src="../img/productosNovedades/casilleroCabernet.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  </div>
-                </div>
+          </div>
+          <div class="col-xl-2">
+            <div class="card">
+              <img src="../img/productos/cabernet/cabernetSalentein.png" class="card-img-top" alt="cabernet Salentein">
+              <div class="card-body">
+                <h5 class="card-title">Salentein</h5>
               </div>
             </div>
+          </div>
+      </div>
 
-            <h1 class="d-flex justify-content-center mt-5">Vinos Blancos</h1><a name="vinosBlancos"></a>
-            <h2 class="d-flex justify-content-center mt-5">Sauvignon Blanc</h2>
-          <article class=" mt-5">
-            
-            <div class="row  row-cols-md-3 g-4 m-auto justify-content-center">
-              <div class="col-xl-2">
-                <div class="card">
-                  <img src="../img/productosNovedades/santajSauvignonBlanc.png" class="card-img-top img-thumbnail " alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-2">
-                <div class="card">
-                  <img src="../img/productosNovedades/santajSauvignonBlanc.png" class="card-img-top"  alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-2">
-                <div class="card">
-                  <img src="../img/productosNovedades/santajSauvignonBlanc.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-2">
-                <div class="card">
-                  <img src="../img/productosNovedades/santajSauvignonBlanc.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <h2 class="d-flex justify-content-center mt-5">Chardonnay</h2>
-          <article class=" mt-5">
-            
-            <div class="row  row-cols-md-3 g-4 m-auto justify-content-center">
-              <div class="col-xl-2">
-                <div class="card">
-                  <img src="../img/productosNovedades/santajSauvignonBlanc.png" class="card-img-top img-thumbnail " alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-2">
-                <div class="card">
-                  <img src="../img/productosNovedades/santajSauvignonBlanc.png" class="card-img-top"  alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-2">
-                <div class="card">
-                  <img src="../img/productosNovedades/santajSauvignonBlanc.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </article>
-        </section>
-        </main>
-
+  </main>
 
 
 

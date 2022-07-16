@@ -1,0 +1,370 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/* FONTS */
+/* VARIABLES */
+/* EXTEND */
+.title {
+  font-family: "Cormorant SC", serif;
+  color: #dfe6e9;
+}
+
+/* APLICA A TODAS LAS PÁGINAS */
+@media (max-width: 576px) {
+  .footer {
+    flex-direction: column;
+    margin: 15px auto;
+  }
+  .footer .navbar-brand {
+    margin: 0 auto;
+  }
+  .footer .footerRedes {
+    margin: auto;
+    justify-content: space-around;
+  }
+}
+@media (max-width: 780px) {
+  .footer {
+    flex-direction: column;
+    margin: 15px auto;
+  }
+  .footer .navbar-brand {
+    margin: 0 auto;
+  }
+  .footer .footerRedes {
+    margin: auto;
+    justify-content: space-around;
+  }
+}
+/* index */
+nav {
+  font-size: larger;
+}
+
+.pasosCompra {
+  margin: auto;
+  max-width: 50%;
+}
+
+.contenido .containerNovedades {
+  background-image: url(../img/barrilles.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.contenido h1 {
+  padding-left: 15%;
+  margin-top: 30px;
+  font-size: 2vw;
+}
+.contenido h2 {
+  padding-left: 15%;
+  margin-top: 20px;
+  font-size: 3vw;
+}
+
+.card {
+  transition: 1s ease;
+}
+
+.carta:hover {
+  transform: scale(1.2);
+  transition: 1s ease;
+}
+
+@media (max-width: 576px) {
+  .contenido {
+    margin-top: 0;
+  }
+  .contenido h1 {
+    font-size: medium;
+  }
+  .contenido h2 {
+    font-size: x-large;
+  }
+}
+/* NOSOTROS */
+/* MIXINS */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+.container__image1 {
+  background-image: url(../img/uvaCabernet.jpg);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-size: cover;
+  transition: ease-in-out 0.3s;
+  z-index: 2;
+}
+.container__image1:before {
+  content: " ";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  background: inherit;
+  background-position: bottom;
+  filter: blur(40px) saturate(0%);
+  transform: scaleX(0.4);
+  transition: ease-in-out 0.4s;
+  border-radius: 120px;
+  transform-origin: right;
+  opacity: 0;
+  z-index: -1;
+}
+.container__image1 .container__info {
+  position: relative;
+  line-height: 1.8;
+  transition: ease-in-out 0.3s;
+  opacity: 0;
+}
+.container__image1 .container__location {
+  transition-delay: 0.15s;
+}
+.container__image1:hover {
+  border-radius: 0;
+  width: 450px;
+  height: 310px;
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(9, 55, 53, 0.08), 0px 16px 24px rgba(9, 55, 53, 0.1), 0px 24px 32px rgba(9, 55, 53, 0.14);
+}
+.container__image1:hover:before {
+  width: 100%;
+  opacity: 0.18;
+  filter: blur(10px) saturate(100%);
+  transform: scale(2.8) translate3d(-18%, 0px, 0px);
+}
+.container__image1:hover .container__info {
+  transform: translate3d(-95%, 0px, 0px);
+  opacity: 1;
+}
+.container__image2 {
+  background-image: url(../img/uvaMalbec.jpg);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-size: cover;
+  transition: ease-in-out 0.3s;
+  z-index: 2;
+}
+.container__image2:before {
+  content: " ";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  background: inherit;
+  background-position: bottom;
+  filter: blur(40px) saturate(0%);
+  transform: scaleX(0.4);
+  transition: ease-in-out 0.4s;
+  border-radius: 120px;
+  transform-origin: right;
+  opacity: 0;
+  z-index: -1;
+}
+.container__image2 .container__info {
+  position: relative;
+  line-height: 1.8;
+  transition: ease-in-out 0.3s;
+  opacity: 0;
+}
+.container__image2 .container__location {
+  transition-delay: 0.15s;
+}
+.container__image2:hover {
+  border-radius: 0;
+  width: 450px;
+  height: 310px;
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(9, 55, 53, 0.08), 0px 16px 24px rgba(9, 55, 53, 0.1), 0px 24px 32px rgba(9, 55, 53, 0.14);
+}
+.container__image2:hover:before {
+  width: 100%;
+  opacity: 0.18;
+  filter: blur(10px) saturate(100%);
+  transform: scale(2.8) translate3d(-18%, 0px, 0px);
+}
+.container__image2:hover .container__info {
+  transform: translate3d(-95%, 0px, 0px);
+  opacity: 1;
+}
+.container__image3 {
+  background-image: url(../img/uvaSB.jpg);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-size: cover;
+  transition: ease-in-out 0.3s;
+  z-index: 2;
+}
+.container__image3:before {
+  content: " ";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  background: inherit;
+  background-position: bottom;
+  filter: blur(40px) saturate(0%);
+  transform: scaleX(0.4);
+  transition: ease-in-out 0.4s;
+  border-radius: 120px;
+  transform-origin: right;
+  opacity: 0;
+  z-index: -1;
+}
+.container__image3 .container__info {
+  position: relative;
+  line-height: 1.8;
+  transition: ease-in-out 0.3s;
+  opacity: 0;
+}
+.container__image3 .container__location {
+  transition-delay: 0.15s;
+}
+.container__image3:hover {
+  border-radius: 0;
+  width: 450px;
+  height: 310px;
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(9, 55, 53, 0.08), 0px 16px 24px rgba(9, 55, 53, 0.1), 0px 24px 32px rgba(9, 55, 53, 0.14);
+}
+.container__image3:hover:before {
+  width: 100%;
+  opacity: 0.18;
+  filter: blur(10px) saturate(100%);
+  transform: scale(2.8) translate3d(-18%, 0px, 0px);
+}
+.container__image3:hover .container__info {
+  transform: translate3d(-95%, 0px, 0px);
+  opacity: 1;
+}
+.container__image4 {
+  background-image: url(../img/uvaChardonnay.jpg);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-size: cover;
+  transition: ease-in-out 0.3s;
+  z-index: 2;
+}
+.container__image4:before {
+  content: " ";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  background: inherit;
+  background-position: bottom;
+  filter: blur(40px) saturate(0%);
+  transform: scaleX(0.4);
+  transition: ease-in-out 0.4s;
+  border-radius: 120px;
+  transform-origin: right;
+  opacity: 0;
+  z-index: -1;
+}
+.container__image4 .container__info {
+  position: relative;
+  line-height: 1.8;
+  transition: ease-in-out 0.3s;
+  opacity: 0;
+}
+.container__image4 .container__location {
+  transition-delay: 0.15s;
+}
+.container__image4:hover {
+  border-radius: 0;
+  width: 450px;
+  height: 310px;
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(9, 55, 53, 0.08), 0px 16px 24px rgba(9, 55, 53, 0.1), 0px 24px 32px rgba(9, 55, 53, 0.14);
+}
+.container__image4:hover:before {
+  width: 100%;
+  opacity: 0.18;
+  filter: blur(10px) saturate(100%);
+  transform: scale(2.8) translate3d(-18%, 0px, 0px);
+}
+.container__image4:hover .container__info {
+  transform: translate3d(-95%, 0px, 0px);
+  opacity: 1;
+}
+
+.encabezado {
+  border-bottom: 1px solid transparent;
+  color: #06C0A8;
+  text-decoration: none;
+  transition: ease-in 0.13s;
+}
+
+/* SECCIÓN INFO COMPRAS */
+.title {
+  margin-bottom: 25px;
+}
+
+.container p {
+  margin-top: 5px;
+  padding: 15px;
+}
+
+/* CONTACTO */
+#contacto {
+  background-image: url(../img/contactoFondo.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+#contacto .formularioContacto {
+  display: flex;
+  justify-content: center;
+  padding: 15%;
+}
+#contacto .formularioContacto form div {
+  padding: 3px;
+  background-color: rgba(247, 244, 242, 0.3);
+  display: flex;
+  flex-direction: column;
+  padding: 5px 15px;
+}
+
+@media (max-width: 1500px) {
+  .formularioContacto form div input {
+    width: 100%;
+  }
+}/*# sourceMappingURL=main.css.map */

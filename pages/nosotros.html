@@ -1,88 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cava</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <!-- SEO -->
+    <meta name="description" content="En CAVA nos especializamos en el estudio del cliente, confíamos en brindar por los buenos momentos junto a ellos.">
+    <meta name="keywords" content="vinos, momentos, bodegas, tienda, compra">
+    <title>CAVA | Conócenos </title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../sass/main.css">
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Finlandica&display=swap" rel="stylesheet">
     <!-- Bootstrap css -->
     <!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-</head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  </head>
 <body>
-    <header>
-        <nav class="navbar bg-light">
-            <div class="container p-2 text-dark ">
-              <a class="navbar-brand " href="../index.html">
-                <img src="../img/logoC.png" alt="logoCava" width="300" height="150">
+  <header>
+    <nav class="navbar navbar-expand-lg bg-light ">
+      <div class="container p-2 ">
+        <a class="navbar-brand " href="../index.html">
+          <img src="../img/logoC.png" alt="logoCava" width="300" height="150">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class=" collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 m-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="./nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="./catalogo.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Catálogo
               </a>
-              <ul class="nav nav-pills">
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" href="./nosotros.html">Nosotros</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="./catalogo.html" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Catálogo
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                      <li><a class="dropdown-item" href="./Catalogo.html#vinoTintos">Vinos Tintos</a></li>
-                      <li><a class="dropdown-item" href="./Catalogo.html#vinosBlancos">Vinos Blancos</a></li>
-                    </ul>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="./comoComprar.html" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Cómo comprar
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                          <li><a class="dropdown-item" href="./comoComprar.html#3cuotas">3 cuotas sin interés</a></li>
-                          <li><a class="dropdown-item" href="./comoComprar.html#envio-gratis">Envío gratis</a></li>
-                          <li><a class="dropdown-item" href="./contacto.html">Venta mayorista</a></li>
-                        </ul>
-                <li class="nav-item">
-                  <a class="nav-link" href="./contacto.html">Contacto</a>
-                </li>
-              
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="./catalogo.html#vinosTintos">Vinos Tintos</a></li>
+                <li><a class="dropdown-item" href="./catalogo.html#vinosBlancos">Vinos Blancos</a></li>
               </ul>
-            </div>
-         
-          </nav>
-        </header>
-
-        
-        <section >
-            <div class="card-group">
-                <div class="card">
-                  <img src="../img/uvas.avif" class="card-img-top" alt="uvas">
-                  <div class="card-body">
-                    <h5 class="card-title fs-1">Mision</h5>
-                    <p class="card-text fs-3">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                  </div>
-                </div>
-                <div class="card">
-                  <img src="../img/copas.jpg" class="card-img-top" alt="copas">
-                  <div class="card-body">
-                    <h5 class="card-title fs-1">Visión</h5>
-                    <p class="card-text fs-3">This card has supporting text below as a natural lead-in to additional content.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                  </div>
-                </div>
-                <div class="card">
-                  <img src="../img/valores.avif" class="card-img-top" alt="uvasSombrero">
-                  <div class="card-body">
-                    <h5 class="card-title fs-1">Valores</h5>
-                    <p class="card-text fs-3">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                  </div>
-                </div>
-              </div>
-              
-        </section>
-
-
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="./catalogo.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Cómo comprar
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="./comoComprar.html#3cuotas">3 cuotas sin interés</a></li>
+                <li><a class="dropdown-item" href="./comoComprar.html#envio-gratis">Envíos gratis</a></li>
+                <li><a class="dropdown-item" href="./contacto.html">Ventas Mayoristas</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contacto.html">Contacto</a>
+            </li>
+        </div>
+      </div>
+    </nav>
+  </header> 
+  
+  <main>
+    <h1 class="title bg-dark">Nuestros tipos de vino</h1>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card">
+          <img src="../img/uvaCabernet.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Cabernet Sauvignon</h5>
+            <p class="card-text">La cabernet sauvignon da vida a vinos con sabores a frutos rojos y de toques herbales, en ocasiones podemos sentir la pimienta e incluso algunos toque ahumados.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="../img/uvaMalbec.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Malbec</h5>
+            <p class="card-text">El vino malbec nos da una sensación muy frutal en boca, a veces con toques florales y puede llegar a secar menos la boca que el cabernet.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="../img/uvaSB.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Sauvignon Blanc</h5>
+            <p class="card-text">Cepa originaria de Francia, se caracteriza por ser un vino fresco, más bien seco y con toques de acidez</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="../img/uvaChardonnay.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Chardonnay</h5>
+            <p class="card-text">Una de las variedades blancas más cultivadas en el mundo, originaria de la región de Borgoña. Y por lo mismo una de las más conocidas. Se caracteriza por un color amarillento a la vista, intenso, de menor acidez que el Sauvignon Blanc. </div> 
+            </div>.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </main>
         
         <footer>
             <nav class="navbar bg-light">
